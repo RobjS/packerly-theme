@@ -1,0 +1,11 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+#q1,#q2,#q3,#q4, .results {
+	display:none;
+}
+
+.site-footer {
+	margin-top:50px;
+}
