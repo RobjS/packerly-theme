@@ -14,11 +14,31 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer container-fluid" role="contentinfo">
+		<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-3">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'packerly-theme' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'packerly-theme' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'packerly-theme' ), 'packerly-theme', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+		<h4>About</h4>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+		</ul>
 		</div><!-- .site-info -->
+		</div>
+		<div class="col-md-3">
+		<h4>Contact</h4>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+		</ul>
+		</div>
+		
+		<div class="col-md-3"></div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

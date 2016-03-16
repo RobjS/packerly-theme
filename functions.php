@@ -119,7 +119,7 @@ function packerly_theme_scripts() {
 	
 	wp_enqueue_style( 'packerly-theme-style', get_stylesheet_uri(), array(), '20160311' );
 	
-	wp_enqueue_style ( 'google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans' );
+	wp_enqueue_style ( 'google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans|Pacifico' );
 
 	wp_enqueue_script( 'jquery1', get_template_directory_uri() . '/js/jquery-1.12.1.js' );
 	

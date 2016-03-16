@@ -1,5 +1,7 @@
 body{
 	font-family: 'Open Sans', sans-serif;
+	background-color:#F2C078;
+	font-size:16px;
 }
 
 #q1,#q2,#q3,#q4, .results {
@@ -7,5 +9,46 @@ body{
 }
 
 .site-footer {
-	margin-top:50px;
+	padding-top:50px;
+}
+
+#content{
+	padding-top:50px;
+}
+
+.lead-banner {
+	background-image: url('img/big-sea-balls.jpg');
+	background-size: cover;
+	min-height:600px;
+	max-height:800px;
+}
+
+.banner-text {
+	margin-top:200px;
+}
+
+.banner-text h1 {
+	font-size:120px;
+	font-family:Pacifico, sans-serif;
+	padding-bottom: 35px;
+}
+
+.highlight-light {
+	color:white;
+}
+
+.subtitle {
+	font-size:20px;
+}
+
+#bs-example-navbar-collapse-1 {
+	background-color:#C1DBB3;
+}
+
+#primary {
+	background-color:#FAEDCA;
+}
+
+#colophon {
+	background-color:#F2C078;
 }
