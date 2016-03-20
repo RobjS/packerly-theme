@@ -1,7 +1,8 @@
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'lato', sans-serif;
 	background-color:#F2C078;
-	font-size:16px;
+	font-size:20px;
+
 }
 
 #q1,#q2,#q3,#q4, .results {
@@ -14,27 +15,40 @@ body{
 
 #content{
 	padding-top:50px;
+
+}
+
+.logged-in #content {
+	padding-top:0;
+}
+
+.logged-in nav {
+	padding-top:32px;
 }
 
 .lead-banner {
-	background-image: url('img/big-sea-balls.jpg');
+	background-image: url('img/banner.jpg');
 	background-size: cover;
-	min-height:600px;
+	min-height:500px;
 	max-height:800px;
+	background-position: bottom;
 }
 
 .banner-text {
-	margin-top:200px;
+	margin-top:130px;
+}
+
+.logo-font {
+	font-family:Pacifico, sans-serif;
 }
 
 .banner-text h1 {
-	font-size:120px;
-	font-family:Pacifico, sans-serif;
+	font-size:100px;
 	padding-bottom: 35px;
 }
 
 .highlight-light {
-	color:white;
+	color:#F9F9F9;
 }
 
 .subtitle {
@@ -42,13 +56,23 @@ body{
 }
 
 #bs-example-navbar-collapse-1 {
-	background-color:#C1DBB3;
+	background-color:#FAEDCA;/*C1DBB3;*/
 }
 
 #primary {
-	background-color:#FAEDCA;
+	background-color:white;/*#FAEDCA;*/
+	padding-top:80px;
+	padding-bottom:80px;
 }
 
 #colophon {
 	background-color:#F2C078;
+	padding-bottom:80px;
 }
+
+.list-no-bullets {
+	list-style-type:none;
+	margin-left: 0;
+	padding-left:0;
+}
+

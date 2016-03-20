@@ -18,8 +18,8 @@
 		<div class="col-md-3"></div>
 		<div class="col-md-3">
 		<div class="site-info">
-		<h4>About</h4>
-		<ul>
+		<h4 class="logo-font">About</h4>
+		<ul class="list-no-bullets">
 			<li>Item 1</li>
 			<li>Item 2</li>
 			<li>Item 3</li>
@@ -28,8 +28,8 @@
 		</div><!-- .site-info -->
 		</div>
 		<div class="col-md-3">
-		<h4>Contact</h4>
-		<ul>
+		<h4 class="logo-font">Contact</h4>
+		<ul class="list-no-bullets">
 			<li>Item 1</li>
 			<li>Item 2</li>
 			<li>Item 3</li>

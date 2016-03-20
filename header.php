@@ -31,7 +31,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Packerly</a>
+			<a class="navbar-brand logo-font" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
 		</div>
 
 		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class'=>'nav navbar-nav', 'container_id'=>'bs-example-navbar-collapse-1', 'container_class' => 'collapse navbar-collapse' ) ); ?>
