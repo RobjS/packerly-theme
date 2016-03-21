@@ -5,7 +5,11 @@ body{
 
 }
 
-#q1,#q2,#q3,#q4, .results {
+.alert {
+	display:none;
+}
+
+#q2,#q3,#q4, .results {
 	display:none;
 }
 
@@ -76,3 +80,14 @@ body{
 	padding-left:0;
 }
 
+#tempSlider .slider-track-low {
+	background:blue;
+}
+
+#tempSlider .slider-selection {
+	background: green;
+}
+
+#tempSlider .slider-track-high {
+	background:red;
+}

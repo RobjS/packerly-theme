@@ -131,7 +131,9 @@ function packerly_theme_scripts() {
 	
 	wp_enqueue_script( 'bootstrap-slider-script', get_template_directory_uri() . '/js/bootstrap-slider.min.js', array('bootstrap-script'), '20160311', false );
 	
-	wp_enqueue_script( 'packerly', get_template_directory_uri() . '/js/packerly.js', array('bootstrap-script'), '20160311', false );
+	if (is_page('packily-search')) {
+		wp_enqueue_script( 'packerly', get_template_directory_uri() . '/js/packerly.js', array('bootstrap-script'), '20160311', false );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'packerly_theme_scripts' );
 
@@ -170,3 +172,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+* Load packilySearch class
+*/
+require get_template_directory() . '/inc/packily-search.php';

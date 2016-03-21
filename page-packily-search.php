@@ -24,13 +24,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<?php if(!isset($_POST['get_items'])){ ?>
 			
-			<form action=<?php echo get_permalink(); ?> method="post">	
-			<div class="question current">
-			  <h2>Going away?</h2>
-			  <p>Good, isn't it? Except there's always something you forget to pack. Let us help with that.</p>
-			  <p><a class="btn btn-primary btn-lg next" href="#" role="button">Get started</a></p>
-			</div>
-
+			<form action=<?php echo get_permalink(); ?> method="post">
 			
 				<?php get_template_part('partials/gender');?>
 				<?php get_template_part('partials/temp');?>
@@ -42,7 +36,7 @@ get_header(); ?>
 		
 		<?php }
 		else {
-		get_template_part('partials/searchresults');
+		get_template_part('partials/searchresultspackily');
 		}?>
 			
 		</main><!-- #main -->

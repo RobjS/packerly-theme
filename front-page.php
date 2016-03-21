@@ -102,7 +102,7 @@ get_header(); ?>
 							
 							echo $field['value'];
 							?>
-							<p><a class="btn btn-primary btn-lg center-block" role="button" href="packerly-search">Get started</a></p>
+							<p><a class="btn btn-primary btn-lg center-block" role="button" href="packily-search">Get started</a></p>
 
 							
 						</div>
