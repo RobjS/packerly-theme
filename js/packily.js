@@ -17,13 +17,16 @@ $(document).ready(function() {
 			.prev().show().addClass("current");
 	})
 	
-	var tempSlider = $("#tempRange").slider({ id:"tempSlider"});
-	changeTempInputFields(tempSlider);
+	if($("#tempRange").length) {
 	
-	$('#tempRange').on('change', function() {
+		var tempSlider = $("#tempRange").slider({ id:"tempSlider"});
 		changeTempInputFields(tempSlider);
-	});
+		
+		$('#tempRange').on('change', function() {
+			changeTempInputFields(tempSlider);
+		});
 	
+	}
 });
 
 function changeTempInputFields(tempSlider) {

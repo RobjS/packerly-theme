@@ -119,7 +119,7 @@ function packerly_theme_scripts() {
 	
 	wp_enqueue_style( 'packerly-theme-style', get_stylesheet_uri(), array(), '20160311' );
 	
-	wp_enqueue_style ( 'google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Lato|' );
+	wp_enqueue_style ( 'google-fonts', 'https://fonts.googleapis.com/css?family=Pacifico|Lato|Arimo' );
 
 	wp_enqueue_script( 'jquery1', get_template_directory_uri() . '/js/jquery-1.12.1.js' );
 	
@@ -132,7 +132,11 @@ function packerly_theme_scripts() {
 	wp_enqueue_script( 'bootstrap-slider-script', get_template_directory_uri() . '/js/bootstrap-slider.min.js', array('bootstrap-script'), '20160311', false );
 	
 	if (is_page('packily-search')) {
-		wp_enqueue_script( 'packerly', get_template_directory_uri() . '/js/packerly.js', array('bootstrap-script'), '20160311', false );
+		wp_enqueue_script( 'packily', get_template_directory_uri() . '/js/packily.js', array('bootstrap-script'), '20160311', false );
+	}
+	
+	if (is_page('packily-results')) {
+		wp_enqueue_script( ' packily-results', get_template_directory_uri(). '/js/packily-results.js' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'packerly_theme_scripts' );

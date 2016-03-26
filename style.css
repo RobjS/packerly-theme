@@ -5,11 +5,11 @@ body{
 
 }
 
-.alert {
+.alert-danger {
 	display:none;
 }
 
-#q2,#q3,#q4, .results {
+#q2,#q3,#q4, #loading, .results {
 	display:none;
 }
 
@@ -57,6 +57,7 @@ body{
 
 .subtitle {
 	font-size:20px;
+	margin-bottom:50px;
 }
 
 #bs-example-navbar-collapse-1 {
@@ -65,7 +66,7 @@ body{
 
 #primary {
 	background-color:white;/*#FAEDCA;*/
-	padding-top:80px;
+	padding-top:50px;
 	padding-bottom:80px;
 }
 
@@ -81,13 +82,17 @@ body{
 }
 
 #tempSlider .slider-track-low {
-	background:blue;
+	background:#3A65FF;
 }
 
 #tempSlider .slider-selection {
-	background: green;
+	background: #56A356;
 }
 
 #tempSlider .slider-track-high {
-	background:red;
+	background:#FF6156;
+}
+
+.remove-item {
+	float: right;
 }

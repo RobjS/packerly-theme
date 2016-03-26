@@ -11,53 +11,30 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		<div class="container">
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'packerly-theme' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'Sorry, looks like we\'ve got a bit lost!', 'packerly-theme' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'packerly-theme' ); ?></p>
-
-					<?php
-						get_search_form();
-
-						the_widget( 'WP_Widget_Recent_Posts' );
-
-						// Only show the widget if site has multiple categories.
-						if ( packerly_theme_categorized_blog() ) :
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'packerly-theme' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-						endif;
-
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'packerly-theme' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-
-						the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
+					<div class="row">
+					<div class="col-md-2">
+						<img src="<?php bloginfo('template_url'); ?>/img/icons/signs.png"/>
+					</div>
+					<div class="col-md-8">
+						<p><?php esc_html_e( 'Try going back to the homepage and making your way from there.', 'packerly-theme' ); ?></p>
+						<p><a href="<?php echo esc_url( home_url( '/' ));?>">Take me back home.</a></p>
+					</div>
+					</div>
+					
+					
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
+		</div><!-- . container -->
 	</div><!-- #primary -->
 
 <?php

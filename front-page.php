@@ -31,6 +31,7 @@ get_header(); ?>
 				<?php
 				endif; ?>
 				</p>
+				<p><a class="btn btn-primary btn-lg center-block" role="button" href="packily-search">Get started</a></p>
 				</div>
 				<div class="col-md-4"></div>
 			</div>		

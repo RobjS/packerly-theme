@@ -22,14 +22,14 @@ get_header(); ?>
 	
 
 		<main id="main" class="site-main" role="main">
-			
-			<form action=<?php echo site_url('packily-results'); ?> method="post">			
-				<?php get_template_part('partials/gender');?>
-				<?php get_template_part('partials/temp');?>
-				<?php get_template_part('partials/activity');?>
-				<?php get_template_part('partials/budget');?>
-				<?php get_template_part('partials/loading');?>
-			</form>
+			<?php if(isset($_POST['get_items'])){ 			
+				get_template_part('partials/searchresultspackily');	
+			}
+			else {
+				wp_redirect( home_url() );
+				exit; 
+			}
+			?>
 			
 		</main><!-- #main -->
 	</div><!-- .container -->
